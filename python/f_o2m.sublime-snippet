@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+'${1:field_name}': fields.one2many('${2:relational_table}', '${3:linked_field}', '${1/(.+)_(.+)/\u\1 \u\2/}'),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>f_o2m</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

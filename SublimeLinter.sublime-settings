@@ -1,0 +1,9 @@
+    {
+    	"sublimelinter_mark_style": "outline",
+
+    // Set this to false to turn pep8 checking off completely
+    "pep8": true,
+
+    // Set to true to highlight annotations
+    "sublimelinter_notes": true
+   }

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+        <record id="view_$1_form" model="ir.ui.view">
+            <field name="name">$1.form</field>
+            <field name="model">${1/(.+)_(.+)/(\1.\2/)}.form</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="${2:module}.view_$1_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="${3:name}"]' position="after">
+                    <field name="${4:name}"/>
+                </xpath>
+            </field>
+        </record>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>inherit_form</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.xml</scope>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+        <record id="view_$1_form" model="ir.ui.view">
+            <field name="name">$1.form</field>
+            <field name="model">${1/(.+)_(.+)/(\1.\2/)}.form</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="${1/(.+)_(.+)/\u\1 \u\2/}">
+                    <field name="name"/>
+                </form>
+            </field>
+        </record>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>new_form</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.xml</scope>
+</snippet>
