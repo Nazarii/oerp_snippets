@@ -2,8 +2,17 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"Ciapre Color Scheme",
+		"Color Highlighter",
 		"CursorRuler",
+		"Indent XML",
+		"JsFormat",
+		"Mirodark Color Scheme",
 		"Package Control",
-		"SublimeLinter"
+		"Python Imports Sorter",
+		"Python Open Module (New)",
+		"Solarized Color Scheme",
+		"SublimeLinter",
+		"xml-guesser"
 	]
 }

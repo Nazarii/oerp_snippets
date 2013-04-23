@@ -4,6 +4,11 @@
     // Set this to false to turn pep8 checking off completely
     "pep8": true,
 
+     "pep8_ignore":
+     [
+        "E127", "E501", "E123", "E124", "E128", "E126", "E711", "E121", "E122", "E502"
+     ],
     // Set to true to highlight annotations
-    "sublimelinter_notes": true
+    "sublimelinter_notes": true,
+    "sublimelinter_popup_errors_on_save": true
    }
