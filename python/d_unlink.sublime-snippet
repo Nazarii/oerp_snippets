@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+def unlink(self, cr, uid, ids, context=None):
+    return super(${1:model_table}, self).unlink(cr, uid, ids, context=context)
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>d_unlink</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>
