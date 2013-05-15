@@ -6,6 +6,7 @@ class ${1: ClassName}(osv.osv):
 	_columns = {
 		'name': fields.char('Name', size=512),
 	}
+$1()
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>new_class</tabTrigger>
