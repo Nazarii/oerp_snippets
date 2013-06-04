@@ -2,6 +2,7 @@
     <content><![CDATA[
     def default_get(self, cr, uid, fields, context=None):
         result = super(${1:model_table}, self).default_get(cr, uid, fields, context=context)
+        $2
         return result
 
 ]]></content>

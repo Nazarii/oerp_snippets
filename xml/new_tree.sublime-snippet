@@ -2,10 +2,10 @@
     <content><![CDATA[
         <record id="view_$1_tree" model="ir.ui.view">
             <field name="name">$1.tree</field>
-            <field name="model">${1/(.+)_(.+)/(\1.\2/)}.tree</field>
+            <field name="model">${1/(.+)_(.+)/(\1.\2/)}</field>
             <field name="type">tree</field>
             <field name="arch" type="xml">
-                <tree string="${1/(.+)_(.+)/\u\1 \u\2/}" colors="blue:state == 'draft';gray:state == 'expired';black:state == 'confirmed'"">
+                <tree string="${1/(.+)_(.+)/\u\1 \u\2/}" colors="blue:state == 'draft';gray:state == 'expired';black:state == 'confirmed'">
                     <field name="name"/>
                 </tree>
             </field>

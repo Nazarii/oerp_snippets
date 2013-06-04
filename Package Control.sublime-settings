@@ -2,9 +2,12 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"BracketHighlighter",
 		"Ciapre Color Scheme",
 		"Color Highlighter",
 		"CursorRuler",
+		"Highlight Whitespaces",
+		"HighlightDuplicates",
 		"Indent XML",
 		"JsFormat",
 		"Mirodark Color Scheme",

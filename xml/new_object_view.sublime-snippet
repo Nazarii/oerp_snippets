@@ -1,0 +1,47 @@
+<snippet>
+    <content><![CDATA[
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record id="view_$1_form" model="ir.ui.view">
+            <field name="name">$1.form</field>
+            <field name="model">${1/(.+)_(.+)/(\1.\2/)}</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="${1/(.+)_(.+)/\u\1 \u\2/}">
+                    <field name="name"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_$1_tree" model="ir.ui.view">
+            <field name="name">$1.tree</field>
+            <field name="model">${1/(.+)_(.+)/(\1.\2/)}</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="${1/(.+)_(.+)/\u\1 \u\2/}" colors="blue:state == 'draft';gray:state == 'expired';black:state == 'confirmed'">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_$1_search" model="ir.ui.view">
+            <field name="name">$1.search</field>
+            <field name="model">${1/(.+)_(.+)/(\1.\2/)}</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="${1/(.+)_(.+)/\u\1 \u\2/}">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</openerp>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>new_object_view</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.xml</scope>
+</snippet>

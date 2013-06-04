@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+def copy(self, cr, uid, id, default=None, context=None):
+        if default is None:
+            default = {}
+        default.update({$2
+                        })
+        return super(${1:model_table}, self).copy(cr, uid, id, default, context)
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>f_copy</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>
