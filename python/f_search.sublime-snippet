@@ -1,9 +1,8 @@
 <snippet>
     <content><![CDATA[
 def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):
-    result = super(${1:model_table}, self).search(cr, uid, args, offset=offset, limit=limit, order=order, context=context, count=count)
     $2
-    return result
+    return super(${1:model_table}, self).search(cr, uid, args, offset=offset, limit=limit, order=order, context=context, count=count)
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
