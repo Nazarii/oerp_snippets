@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+def read_group(self, cr, uid, domain, fields, groupby, offset=0, limit=None, context={}, orderby=None):
+    return super(${1: model_table}, self).read_group(cr, uid, domain, fields, groupby, offset=offset, limit=limit, context=context, orderby=orderby)
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>read_group</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>
